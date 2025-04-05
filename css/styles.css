@@ -1,0 +1,362 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.logo img {
+    width: 100px;    
+    height: auto;     
+    display: block;  
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: #002f6c;
+    color: white;
+    
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    position: relative; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3em;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('../assets/Gente de oficina.jpg') no-repeat center center / cover;
+    color: #f0f0f0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    height: 100vh; 
+}
+
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1; /* Sobre las partículas */
+    text-align: left;
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+button.primary {
+    background-color: #00509e;
+    color: white;
+    padding: 0.75em 1.5em;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.primary:hover {
+    background-color: #006fd6;
+}
+
+
+button.secondary {
+    background-color: transparent;
+    color: #f0f0f0;
+    font-weight: bold;
+    border: 2px solid #f0f0f0;
+}
+
+button.secondary:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}
+
+
+button {
+    padding: 0.75em 1.5em;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button.primary {
+    background-color: #002f6c;
+    color: white;
+    font-weight: bold;
+}
+
+button.primary:hover {
+    background-color: #004a99;
+}
+
+button.secondary {
+    background-color: white;
+    color: #002f6c;
+    font-weight: bold;
+    border: 2px solid #002f6c;
+}
+
+button.secondary:hover {
+    background-color: #e6f0ff;
+}
+
+.benefits {
+    padding: 2em;
+    background-color: #002f6c;
+    color: white;
+    text-align: center;
+}
+
+.benefits h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.benefit-item h3 {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+}
+
+.benefit-item p {
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.services {
+    padding: 3em;
+    text-align: center;
+    background-color: #f5faff;
+}
+
+.services h2 {
+    font-size: 2.5em;
+    margin-bottom: 1.5em;
+    color: #002f6c; 
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 2em; 
+    align-items: stretch; 
+}
+
+.service-item {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 2em;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column; /* Contenido en columna */
+    justify-content: space-between; /* Alinea el contenido */
+    height: 100%; /* Asegura alturas iguales */
+}
+
+.service-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-item h3 {
+    font-size: 1.8em;
+    color: #004a99;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.service-item p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 1em;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    margin-top: auto; 
+    padding: 0.75em 1.5em;
+    border: none;
+    border-radius: 5px;
+    background-color: #00509e;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #006fd6;
+}
+
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Tarjetas más pequeñas */
+    }
+}
+.form-section {
+    padding: 2em;
+    background-color: #f9f9f9;
+}
+
+.form-section h2 {
+    text-align: center;
+    color: #002f6c;
+    margin-bottom: 1em;
+}
+
+form {
+    max-width: 600px;
+    margin: 2em auto;
+    background: #f5faff; 
+    padding: 2em;
+    border-radius: 10px; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd; 
+    font-family: 'Arial', sans-serif;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    color: #004a99; 
+    font-size: 1em;
+}
+
+form input {
+    width: 100%;
+    padding: 0.75em;
+    margin-bottom: 1.5em;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05); 
+    transition: all 0.3s ease;
+}
+
+form input:focus {
+    border-color: #004a99; 
+    box-shadow: 0 0 5px rgba(0, 74, 153, 0.5); 
+    outline: none;
+}
+
+form button {
+    background-color: #004a99;
+    color: white;
+    padding: 0.75em 1.5em;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background-color: #006fd6; 
+    transform: scale(1.05); 
+}
+
+form button:active {
+    background-color: #003366; 
+    transform: scale(0.98); 
+}
+
+form textarea {
+    width: 100%;
+    padding: 0.75em;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+    resize: vertical; 
+    transition: border-color 0.3s ease;
+}
+
+form textarea:focus {
+    border-color: #004a99;
+    box-shadow: 0 0 5px rgba(0, 74, 153, 0.5);
+    outline: none;
+}
+
+
+@media (max-width: 768px) {
+    form {
+        padding: 1.5em;
+    }
+
+    form button {
+        width: 100%; 
+    }
+}
+
+.footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #002f6c;
+    color: white;
+}
+
+.footer p {
+    margin: 0.5em 0;
+    font-size: 1em;
+}
+
+.footer strong {
+    font-size: 1.1em;
+    font-weight: bold;
+}
