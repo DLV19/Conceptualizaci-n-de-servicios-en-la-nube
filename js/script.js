@@ -1,5 +1,5 @@
 
-// al hacer click en la imagen redirige a otros html (contabilidad y factura electronica.)
+// al hacer click en la imagen redirige a otros html (contabilidad factura electronica y nominas)
 
 const contabilidad = document.getElementById('contabilidad');
 contabilidad.addEventListener('click', function () {
@@ -12,10 +12,12 @@ facturaE.addEventListener('click', function () {
     // Redirige al archivo local facturaE.html.html
     window.location.href = 'facturaE.html';
 });
-const nominas = document.getElementById('nomina');
-nominas.addEventListener('click', function () {
-    window.open('https://media.istockphoto.com/id/1929916076/es/foto/work-in-progress.jpg?s=2048x2048&w=is&k=20&c=Ge3-MZjgoJSCGEjwvPr6YxB1ifRZkL4KKL980TeU9EU=', '_blank');
+const nomina = document.getElementById('nomina');
+nomina.addEventListener('click', function () {
+    window.location.href = 'nominas.html';
 });
+
+
 // particulas
 
 particlesJS('particles-js', {
