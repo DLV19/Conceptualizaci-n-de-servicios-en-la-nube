@@ -4,19 +4,23 @@ body {
     padding: 0;
 }
 
-.logo img {
-    width: 100px;    
-    height: auto;     
-    display: block;  
-}
-
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1em 2em;
-    background-color: #007473;
+    padding: 1.2em 2em;
+    background-color: #002f6c;
     color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo img {
+    height: 100px;
+    width: auto;
+    display: block;
 }
 
 .nav ul {
