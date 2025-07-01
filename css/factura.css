@@ -452,18 +452,44 @@ button.primary:hover {
 }
 
 .footer {
-    text-align: center;
-    padding: 1em;
-    background-color: #007473;
-    color: white;
+    background-color: #002f6c;
+    color: #e0e0e0;
+    padding: 2em 1.5em;
+    font-size: 0.95em;
+    line-height: 1.6;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 2em;
+}
+
+.footer-info h3 {
+    color: #ffa726;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
 }
 
 .footer p {
     margin: 0.5em 0;
-    font-size: 1em;
 }
 
-.footer strong {
-    font-size: 1.1em;
+.footer a {
+    color: #ffa726;
+    text-decoration: none;
     font-weight: bold;
 }
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsivo: 2 columnas desde 768px en adelante */
+@media (min-width: 768px) {
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
