@@ -3,116 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contabilidad </title>
-    <link rel="stylesheet" href="css/contabilidad.css">
+    <title>CONTPAQi® Contabilidad | Sistemas y Soluciones Integrales</title>
+    <meta name="description" content="Ideal para contadores independientes y emprendedores que necesitan llevar la contabilidad de sus negocios.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/script.js"></script>
 </head>
-<body> <div id="Contenedor-General">
-    
+<body class="producto-contabilidad">
     <header class="header">
-        <div class="logo">
-            <img src="assets/logosys.png" alt="Logo CONTPAQ">
-          </div>
-          
-        <nav class="nav">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="#beneficios">Beneficios</a></li>
-                <li><a href="#planes">Planes</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="wrap">
+            <a class="logo" href="index.html">
+                <img src="assets/logo-ssi.png" alt="Sistemas y Soluciones Integrales" width="640" height="370">
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">
+                <span></span>
+            </button>
+            <nav class="nav" id="menu" aria-label="Principal">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#beneficios">Beneficios</a></li>
+                    <li><a href="#planes">Planes</a></li>
+                    <li><a href="index.html?producto=contabilidad#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-  
-    <section class="hero" id="hero">
-        <div class="hero-content">
-            <h1>¿Cómo saber si necesitas CONTPAQ<i> Contabilidad?</i></h1>
-            <p>Ideal para contadores independientes y emprendedores que necesitan llevar la contabilidad de sus negocios.</p>
-            <button class="primary">Solicita tu cotización</button>
-        </div>
-    </section>
+    <main>
+        <section class="hero hero--contabilidad">
+            <div class="wrap">
+                <div class="hero-content">
+                    <span class="hero-badge">CONTPAQi® Contabilidad</span>
+                    <h1>¿Cómo saber si necesitas CONTPAQi® Contabilidad?</h1>
+                    <p>Ideal para contadores independientes y emprendedores que necesitan llevar la contabilidad de sus negocios.</p>
+                    <div class="hero-actions">
+                        <a class="btn btn--primary" href="index.html?producto=contabilidad#contacto">Solicita tu cotización</a>
+                        <a class="btn btn--ghost" href="#planes">Ver precios</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section class="benefits">
-        <div class="benefits-content">
-            <h2>Conoce los beneficios de CONTPAQ<i> Contabilidad</i></h2>
-            <div class="benefit-item">
-                <h3>Captura manual simplificada</h3>
-                <p>Automatiza tus registros contables con facilidad y precisión.</p>
+        <section id="beneficios" class="section">
+            <div class="wrap benefits">
+                <div>
+                    <h2>Beneficios de CONTPAQi® Contabilidad</h2>
+                    <ul class="benefit-list">
+                        <li>
+                            <div>
+                                <h3>Captura manual simplificada</h3>
+                                <p>Automatiza tus registros contables con facilidad y precisión.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h3>Cumple con normativas fiscales</h3>
+                                <p>Genera los archivos necesarios según las disposiciones del SAT.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h3>Controla tus documentos</h3>
+                                <p>Gestiona documentos XML y movimientos contables recurrentes.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="benefits-media">
+                    <img src="assets/contador.jpg" alt="Contador revisando documentos en su escritorio" width="900" height="1347" loading="lazy">
+                </div>
             </div>
-            <div class="benefit-item">
-                <h3>Cumple con normativas fiscales</h3>
-                <p>Genera los archivos necesarios según las disposiciones del SAT.</p>
-            </div>
-            <div class="benefit-item">
-                <h3>Controla tus documentos</h3>
-                <p>Gestiona documentos XML y movimientos contables recurrentes.</p>
-            </div>
-        </div>
-        <div class="benefits-image">
-            <img src="assets/Contador.jpg" alt="Descripción de la imagen">
-        </div>
-    </section>
-    
+        </section>
 
-    <section class="plans" id="planes">
-        <h2>Planes CONTPAQ<i> Contabilidad</i></h2>
-        <div class="plans-container">
-           
-            <table class="pricing-table">
-                <thead>
-                    <tr>
-                        <th>Tipo de Plan</th>
-                        <th>Precio Base para 1 Usuario</th>
-                        <th>Precio por Usuario Adicional en Red</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Licencia nueva multi - RFC</td>
-                        <td>$5,190.00</td>
-                        <td>$1,490.00</td>
-                    </tr>
-                    <tr>
-                        <td>Renovación multi - RFC</td>
-                        <td>$4,890.00</td>
-                        <td>$1,490.00</td>
-                    </tr>
-                    <tr>
-                        <td>Licencia nueva mono - RFC</td>
-                        <td>$3,790.00</td>
-                        <td>$1,490.00</td>
-                    </tr>
-                    <tr>
-                        <td>Renovación mono - RFC</td>
-                        <td>$3,690.00</td>
-                        <td>$1,490.00</td>
-                    </tr>
-                </tbody>
-            </table>
-          
-            <div class="plans-image">
-                <img src="assets/Contabilidad escalada.png" alt="Descripción de los planes">
+        <section id="planes" class="section section--mist">
+            <div class="wrap">
+                <h2>Planes y precios</h2>
+                <p class="section-intro">El precio base incluye un usuario; agrega usuarios adicionales para trabajar en red.</p>
+                <div class="pricing">
+                    <div class="ticket">
+                        <div class="ticket-head">
+                            <h3>CONTPAQi® Contabilidad</h3>
+                            <span>Precios en MXN</span>
+                        </div>
+                        <div class="table-scroll">
+                            <table class="price-table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Tipo de plan</th>
+                                        <th scope="col">Base, 1 usuario</th>
+                                        <th scope="col">Usuario adicional en red</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Licencia nueva multi-RFC</td>
+                                        <td class="price-main">$5,190.00</td>
+                                        <td>$1,490.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Renovación multi-RFC</td>
+                                        <td class="price-main">$4,890.00</td>
+                                        <td>$1,490.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Licencia nueva mono-RFC</td>
+                                        <td class="price-main">$3,790.00</td>
+                                        <td>$1,490.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Renovación mono-RFC</td>
+                                        <td class="price-main">$3,690.00</td>
+                                        <td>$1,490.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="ticket-note">¿No sabes cuál elegir? Te ayudamos a escoger la licencia correcta para tu negocio.</p>
+                    </div>
+                    <div class="pricing-aside">
+                        <img src="assets/contabilidad.png" alt="Logotipo de CONTPAQi® Contabilidad" width="589" height="550" loading="lazy">
+                        <a class="btn btn--primary" href="index.html?producto=contabilidad#contacto">Cotizar Contabilidad</a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer class="footer">
-  <div class="footer-container">
-    <div class="footer-info">
-      <h3>¿Quiénes somos?</h3>
-      <p>Nos especializamos en la gama de productos de la familia CONTPAQi®</p>
-      <p>Angelica Noemi Guzman Velazquez, Assesor Certificado CONTPAQi®.</p>
-    </div>
-    <div class="footer-contact">
-      <p><strong>Dirección:</strong> Gaza #1304, Col. Beatriz Hernández, C.P. 44760, Guadalajara, Jalisco, México</p>
-      <p><strong>Teléfono:</strong> <a href="tel:3312415435">33 1241 5435</a></p>
-      <p><strong>Correos:</strong><br>
-        <a href="mailto:angelica@ssi.mx">angelica@ssi.mx</a><br>
-        <a href="mailto:angelica.contpaqi@hotmail.com">angelica.contpaqi@hotmail.com</a>
-      </p>
-    </div>
-  </div>
-</footer>
-</div>
+        <div class="wrap">
+            <div class="footer-grid">
+                <div>
+                    <h3>Sistemas y Soluciones Integrales</h3>
+                    <p>Nos especializamos en la gama de productos de la familia CONTPAQi®.</p>
+                    <p>Angélica Noemí Guzmán Velázquez, Asesor Certificado CONTPAQi®.</p>
+                </div>
+                <div>
+                    <h3>Productos</h3>
+                    <ul>
+                        <li><a href="contabilidad.html">CONTPAQi® Contabilidad</a></li>
+                        <li><a href="facturaE.html">CONTPAQi® Factura Electrónica</a></li>
+                        <li><a href="nominas.html">CONTPAQi® Nóminas</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Contacto</h3>
+                    <p>Gaza #1304, Col. Beatriz Hernández, C.P. 44760, Guadalajara, Jalisco, México</p>
+                    <p><a href="tel:+523312415435">33 1241 5435</a></p>
+                    <p><a href="mailto:angelica@ssi.mx">angelica@ssi.mx</a><br>
+                       <a href="mailto:angelica.contpaqi@hotmail.com">angelica.contpaqi@hotmail.com</a></p>
+                </div>
+            </div>
+            <p class="footer-bottom">© <span data-year>2026</span> Sistemas y Soluciones Integrales. CONTPAQi® es una marca registrada de su respectivo propietario.</p>
+        </div>
+    </footer>
 </body>
 </html>

@@ -3,113 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Factura Electronica </title>
-    <link rel="stylesheet" href="css/factura.css">
+    <title>CONTPAQi® Factura Electrónica | Sistemas y Soluciones Integrales</title>
+    <meta name="description" content="El software que agiliza tus procesos de facturación, ventas y cobranza, y hace más productivo tu negocio.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/script.js"></script>
 </head>
-<body>
+<body class="producto-factura">
     <header class="header">
-        <div class="logo">
-            <img src="assets/logosys.png" alt="Logo CONTPAQ">
-          </div>
-        <nav class="nav">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="#beneficios">Beneficios</a></li>
-                <li><a href="#planes">Planes</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="wrap">
+            <a class="logo" href="index.html">
+                <img src="assets/logo-ssi.png" alt="Sistemas y Soluciones Integrales" width="640" height="370">
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">
+                <span></span>
+            </button>
+            <nav class="nav" id="menu" aria-label="Principal">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#beneficios">Beneficios</a></li>
+                    <li><a href="#planes">Planes</a></li>
+                    <li><a href="index.html?producto=factura#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section class="hero" id="hero">
-        <div class="hero-content">
-            <h1>¿Cómo saber si necesitas CONTPAQ<i> factura electronica?</i></h1>
-            <p>El software que agiliza tus procesos de facturacion,ventas cobtanza y que hace mas productivo tu negocio.</p>
-            <button class="primary">Solicita tu cotización</button>
-        </div>
-    </section>
+    <main>
+        <section class="hero hero--factura">
+            <div class="wrap">
+                <div class="hero-content">
+                    <span class="hero-badge">CONTPAQi® Factura Electrónica</span>
+                    <h1>¿Cómo saber si necesitas CONTPAQi® Factura Electrónica?</h1>
+                    <p>El software que agiliza tus procesos de facturación, ventas y cobranza, y hace más productivo tu negocio.</p>
+                    <div class="hero-actions">
+                        <a class="btn btn--primary" href="index.html?producto=factura#contacto">Solicita tu cotización</a>
+                        <a class="btn btn--ghost" href="#planes">Ver precios</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section class="benefits">
-        <div class="benefits-content">
-            <h2>Conoce los beneficios de CONTPAQi® Factura Electrónica</h2>
-            <div class="benefit-item">
-                <h3>Más que timbrar CFDI</h3>
-                <p>CONTPAQi® Factura electrónica es un sistema que va más allá de solo timbrar CFDI, también te ayuda a organizar tus XML.</p>
+        <section id="beneficios" class="section">
+            <div class="wrap benefits">
+                <div>
+                    <h2>Beneficios de CONTPAQi® Factura Electrónica</h2>
+                    <ul class="benefit-list">
+                        <li>
+                            <div>
+                                <h3>Más que timbrar CFDI</h3>
+                                <p>Va más allá de solo timbrar CFDI: también te ayuda a organizar tus XML.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h3>Gestión eficiente de XML</h3>
+                                <ul class="sub-list">
+                                    <li>Recibe y almacena tus archivos XML.</li>
+                                    <li>Verifica la autenticidad de tus CFDI: estructura, sello y cadena original.</li>
+                                    <li>Consúltalos por fecha, importe y RFC.</li>
+                                    <li>Cancela tus CFDI de forma automática.</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="benefits-media">
+                    <img src="assets/productividad.jpg" alt="Equipo de trabajo revisando información en una computadora" width="1000" height="667" loading="lazy">
+                </div>
             </div>
-            <div class="benefit-item">
-                <h3>Gestión eficiente de XML</h3>
-                <p>
-                    • Recibir y almacenar los archivos XML.<br>
-                    • Verificar la autenticidad de todos tus CFDI (estructura, sello y cadena original).<br>
-                    • Consultarlos por fecha, importes y RFC.<br>
-                    • Cancela tus CFDI de manera automática sin necesidad.
-                </p>
-            </div>
-        </div>
-        <div class="benefits-image">
-            <img src="assets/Productividad.jpg" alt="Descripción de la imagen">
-        </div>
-    </section>
-    
+        </section>
 
-    <section class="plans" id="planes">
-        <h2>Planes CONTPAQ<i> Factura Electronica</i></h2>
-        <div class="plans-container">
-            <!-- Tabla de precios -->
-            <table class="pricing-table">
-                <thead>
-                    <tr>
-                        <th>Tipo de Plan</th>
-                        <th>Precio Base para 1 Usuario</th>
-                        <th>Precio por Usuario Adicional en Red</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Licencia nueva 1 RFC</td>
-                        <td>$2,390.00</td>
-                        <td>$790.00</td>
-                    </tr>
-                    <tr>
-                        <td>Renovación 1 RFC</td>
-                        <td>$2,290.00</td>
-                        <td>$690.00</td>
-                    </tr>
-                    <tr>
-                        <td>Licencia nueva Multi - RFC</td>
-                        <td>$3,590.00</td>
-                        <td>$1,090.00</td>
-                    </tr>
-                    <tr>
-                        <td>Renovación Multi - RFC</td>
-                        <td>$3,390.00</td>
-                        <td>$990.00</td>
-                    </tr>
-                </tbody>
-            </table>
-    
-            <div class="plans-image">
-                <img src="assets/Factura Electronica escalada.png" alt="Descripción de los planes">
+        <section id="planes" class="section section--mist">
+            <div class="wrap">
+                <h2>Planes y precios</h2>
+                <p class="section-intro">El precio base incluye un usuario; agrega usuarios adicionales para trabajar en red.</p>
+                <div class="pricing">
+                    <div class="ticket">
+                        <div class="ticket-head">
+                            <h3>CONTPAQi® Factura Electrónica</h3>
+                            <span>Precios en MXN</span>
+                        </div>
+                        <div class="table-scroll">
+                            <table class="price-table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Tipo de plan</th>
+                                        <th scope="col">Base, 1 usuario</th>
+                                        <th scope="col">Usuario adicional en red</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Licencia nueva 1 RFC</td>
+                                        <td class="price-main">$2,390.00</td>
+                                        <td>$790.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Renovación 1 RFC</td>
+                                        <td class="price-main">$2,290.00</td>
+                                        <td>$690.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Licencia nueva multi-RFC</td>
+                                        <td class="price-main">$3,590.00</td>
+                                        <td>$1,090.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Renovación multi-RFC</td>
+                                        <td class="price-main">$3,390.00</td>
+                                        <td>$990.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="ticket-note">¿No sabes cuál elegir? Te ayudamos a escoger la licencia correcta para tu negocio.</p>
+                    </div>
+                    <div class="pricing-aside">
+                        <img src="assets/factura-electronica.png" alt="Logotipo de CONTPAQi® Factura Electrónica" width="589" height="550" loading="lazy">
+                        <a class="btn btn--primary" href="index.html?producto=factura#contacto">Cotizar Factura Electrónica</a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer class="footer">
-  <div class="footer-container">
-    <div class="footer-info">
-      <h3>¿Quiénes somos?</h3>
-      <p>Nos especializamos en la gama de productos de la familia CONTPAQi®</p>
-      <p>Angelica Noemi Guzman Velazquez, Assesor Certificado CONTPAQi®.</p>
-    </div>
-    <div class="footer-contact">
-      <p><strong>Dirección:</strong> Gaza #1304, Col. Beatriz Hernández, C.P. 44760, Guadalajara, Jalisco, México</p>
-      <p><strong>Teléfono:</strong> <a href="tel:3312415435">33 1241 5435</a></p>
-      <p><strong>Correos:</strong><br>
-        <a href="mailto:angelica@ssi.mx">angelica@ssi.mx</a><br>
-        <a href="mailto:angelica.contpaqi@hotmail.com">angelica.contpaqi@hotmail.com</a>
-      </p>
-    </div>
-  </div>
-</footer>
+        <div class="wrap">
+            <div class="footer-grid">
+                <div>
+                    <h3>Sistemas y Soluciones Integrales</h3>
+                    <p>Nos especializamos en la gama de productos de la familia CONTPAQi®.</p>
+                    <p>Angélica Noemí Guzmán Velázquez, Asesor Certificado CONTPAQi®.</p>
+                </div>
+                <div>
+                    <h3>Productos</h3>
+                    <ul>
+                        <li><a href="contabilidad.html">CONTPAQi® Contabilidad</a></li>
+                        <li><a href="facturaE.html">CONTPAQi® Factura Electrónica</a></li>
+                        <li><a href="nominas.html">CONTPAQi® Nóminas</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Contacto</h3>
+                    <p>Gaza #1304, Col. Beatriz Hernández, C.P. 44760, Guadalajara, Jalisco, México</p>
+                    <p><a href="tel:+523312415435">33 1241 5435</a></p>
+                    <p><a href="mailto:angelica@ssi.mx">angelica@ssi.mx</a><br>
+                       <a href="mailto:angelica.contpaqi@hotmail.com">angelica.contpaqi@hotmail.com</a></p>
+                </div>
+            </div>
+            <p class="footer-bottom">© <span data-year>2026</span> Sistemas y Soluciones Integrales. CONTPAQi® es una marca registrada de su respectivo propietario.</p>
+        </div>
+    </footer>
 </body>
 </html>

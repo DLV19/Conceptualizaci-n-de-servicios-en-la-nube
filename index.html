@@ -3,114 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>servicios CONTPAQi</title>
+    <title>CONTPAQi® en Guadalajara | Sistemas y Soluciones Integrales</title>
+    <meta name="description" content="Distribuidor certificado CONTPAQi®: Contabilidad, Factura Electrónica y Nóminas con asesoría personalizada.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" defer></script>
     <script defer src="js/script.js"></script>
 </head>
-<body>
+<body class="">
     <header class="header">
-        <div class="logo">
-            <img src="assets/logosys.png" alt="Logo CONTPAQ">
-          </div>
-        <nav class="nav">
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="wrap">
+            <a class="logo" href="index.html">
+                <img src="assets/logo-ssi.png" alt="Sistemas y Soluciones Integrales" width="640" height="370">
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">
+                <span></span>
+            </button>
+            <nav class="nav" id="menu" aria-label="Principal">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
     <main>
-        <!-- Hero Section banner --> 
-        <section id="inicio" class="hero">
-            <!-- Canvas para Partículas -->
-            <div id="particles-js"></div>
-
-            <!-- Contenido del Hero -->
-            <div class="hero-content">
-                <h1>¿Quieres conocer el sistema<br> CONTPAQ i?</h1>
-                <p>Software empresarial fácil y completo, ideal para tu empresa o negocio.</p>
-                <button class="btn primary">Probar ahora</button>
-                <button class="btn secondary">Contáctanos</button>
-            </div>
-        </section>
-
-        <!-- Sección Nosotros -->
-        <section id="nosotros" class="benefits">
-            <h2>Conoce los beneficios de CONTPAQi® Contabilidad</h2>
-            <div class="benefit-item">
-                <h3>Captura manual</h3>
-                <p>Asocia los nuevos CFDI para tus procesos contables.</p>
-            </div>
-        </section>
-
-        <!-- Nueva sección de Servicios -->
-        <section id="servicios" class="services">
-            <h2>Nuestros Servicios</h2>
-            <div class="services-grid">
-                <div class="service-item">
-                    <img id="contabilidad" src="assets/Contabilidad escalada.png" alt="Servicio 1">
-                    <h3>Contabilidad</h3>
-                    <p>Controla y analiza toda tu información contable.</p>
-                </div>
-                <div class="service-item">
-                    <img id="factura-electronica" src="assets/Factura Electronica escalada.png" alt="Servicio 2">
-                    <h3>Facturación Electrónica</h3>
-                    <p>Genera y administra tus CFDIs de forma eficiente.</p>
-                </div>
-                <div class="service-item">
-                    <img id="nomina" src="assets/Nomina escalada.png" alt="Servicio 3">
-                    <h3>Nóminas</h3>
-                    <p>Automatiza y gestiona tus procesos de nómina.</p>
+        <section id="inicio" class="hero hero--inicio">
+            <div id="particles-js" aria-hidden="true"></div>
+            <div class="wrap">
+                <div class="hero-content">
+                    <span class="hero-badge">Distribuidor certificado CONTPAQi®</span>
+                    <h1>El software contable que tu negocio ya necesita</h1>
+                    <p>Contabilidad, facturación y nómina en sistemas fáciles de usar, con la asesoría de alguien que te acompaña desde la instalación.</p>
+                    <div class="hero-actions">
+                        <a class="btn btn--primary" href="#contacto">Solicita una demostración</a>
+                        <a class="btn btn--ghost" href="#productos">Ver productos</a>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Formulario de Contacto -->
-        <section id="contacto" class="form-section">
-            <h2>Contactanos</h2>
-            <form>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-                
-                <label for="telefono">Teléfono:</label>
-                <input type="tel" id="telefono" name="telefono" required>
-                
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="empresa">Empresa:</label>
-                <input type="text" id="empresa" name="empresa">
-                
-                <label for="ciudad">Ciudad:</label>
-                <input type="text" id="ciudad" name="ciudad">
-                
-                <button type="submit" class="btn primary">Enviar</button>
-            </form>
+        <section id="nosotros" class="section">
+            <div class="wrap about">
+                <div>
+                    <h2>Más que vender una licencia</h2>
+                    <p class="section-intro">Somos asesores certificados en la familia de productos CONTPAQi®. Te ayudamos a elegir el sistema adecuado y a sacarle provecho desde el primer día.</p>
+                </div>
+                <ul class="about-list">
+                    <li>
+                        <h3>Te ayudamos a elegir</h3>
+                        <p>Revisamos cómo trabaja tu negocio y te recomendamos la licencia que realmente necesitas.</p>
+                    </li>
+                    <li>
+                        <h3>Instalación y configuración</h3>
+                        <p>Dejamos el sistema listo en tus equipos, en uno o varios usuarios en red.</p>
+                    </li>
+                    <li>
+                        <h3>Acompañamiento continuo</h3>
+                        <p>Resolvemos tus dudas y te avisamos a tiempo de renovaciones y actualizaciones del SAT.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="productos" class="section section--mist">
+            <div class="wrap">
+                <h2>Nuestros productos</h2>
+                <p class="section-intro">Elige un producto para conocer sus beneficios y precios.</p>
+                <div class="products">
+                    <a class="product-card product-card--contabilidad" href="contabilidad.html">
+                        <img src="assets/contabilidad.png" alt="" width="589" height="550" loading="lazy">
+                        <div class="product-card-body">
+                            <h3>Contabilidad</h3>
+                            <p>Controla y analiza toda tu información contable.</p>
+                            <span class="product-card-link">Conocer Contabilidad</span>
+                        </div>
+                    </a>
+                    <a class="product-card product-card--factura" href="facturaE.html">
+                        <img src="assets/factura-electronica.png" alt="" width="589" height="550" loading="lazy">
+                        <div class="product-card-body">
+                            <h3>Factura Electrónica</h3>
+                            <p>Genera y administra tus CFDI de forma eficiente.</p>
+                            <span class="product-card-link">Conocer Factura Electrónica</span>
+                        </div>
+                    </a>
+                    <a class="product-card product-card--nominas" href="nominas.html">
+                        <img src="assets/nominas.png" alt="" width="589" height="550" loading="lazy">
+                        <div class="product-card-body">
+                            <h3>Nóminas</h3>
+                            <p>Automatiza y gestiona tus procesos de nómina.</p>
+                            <span class="product-card-link">Conocer Nóminas</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="section">
+            <div class="wrap contact">
+                <div class="contact-info">
+                    <h2>Contáctanos</h2>
+                    <p>Déjanos tus datos y te respondemos con una cotización o para agendar una demostración.</p>
+                    <dl>
+                        <div><dt>Teléfono</dt><dd><a href="tel:+523312415435">33 1241 5435</a></dd></div>
+                        <div><dt>Correo</dt><dd><a href="mailto:angelica@ssi.mx">angelica@ssi.mx</a></dd></div>
+                        <div><dt>Oficina</dt><dd>Gaza #1304, Col. Beatriz Hernández, Guadalajara, Jalisco</dd></div>
+                    </dl>
+                </div>
+
+                <form class="form" id="contact-form" novalidate>
+                    <div class="field">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+                        <span class="field-error" id="nombre-error" aria-live="polite"></span>
+                    </div>
+                    <div class="field">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" autocomplete="tel" inputmode="numeric" pattern="[0-9 ]{10,14}" required>
+                        <span class="field-error" id="telefono-error" aria-live="polite"></span>
+                    </div>
+                    <div class="field field--full">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" autocomplete="email" required>
+                        <span class="field-error" id="email-error" aria-live="polite"></span>
+                    </div>
+                    <div class="field">
+                        <label for="empresa">Empresa <small>(opcional)</small></label>
+                        <input type="text" id="empresa" name="empresa" autocomplete="organization">
+                    </div>
+                    <div class="field">
+                        <label for="ciudad">Ciudad <small>(opcional)</small></label>
+                        <input type="text" id="ciudad" name="ciudad" autocomplete="address-level2">
+                    </div>
+                    <div class="field field--full">
+                        <label for="producto">Producto de interés</label>
+                        <select id="producto" name="producto">
+                            <option value="general">Aún no lo sé, quiero asesoría</option>
+                            <option value="contabilidad">CONTPAQi® Contabilidad</option>
+                            <option value="factura">CONTPAQi® Factura Electrónica</option>
+                            <option value="nominas">CONTPAQi® Nóminas</option>
+                        </select>
+                    </div>
+                    <div class="field field--full">
+                        <label for="mensaje">Mensaje <small>(opcional)</small></label>
+                        <textarea id="mensaje" name="mensaje" placeholder="Cuántos usuarios necesitas, si ya tienes una licencia, etc."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary">Enviar solicitud</button>
+                    <p class="form-status" id="form-status" role="status" hidden></p>
+                </form>
+            </div>
         </section>
     </main>
+
     <footer class="footer">
-  <div class="footer-container">
-    <div class="footer-info">
-      <h3>¿Quiénes somos?</h3>
-      <p>Nos especializamos en la gama de productos de la familia CONTPAQi®</p>
-      <p>Angelica Noemi Guzman Velazquez, Assesor Certificado CONTPAQi®.</p>
-    </div>
-    <div class="footer-contact">
-      <p><strong>Dirección:</strong> Gaza #1304, Col. Beatriz Hernández, C.P. 44760, Guadalajara, Jalisco, México</p>
-      <p><strong>Teléfono:</strong> <a href="tel:3312415435">33 1241 5435</a></p>
-      <p><strong>Correos:</strong><br>
-        <a href="mailto:angelica@ssi.mx">angelica@ssi.mx</a><br>
-        <a href="mailto:angelica.contpaqi@hotmail.com">angelica.contpaqi@hotmail.com</a>
-      </p>
-    </div>
-  </div>
-</footer>
-
-
-
-
-
+        <div class="wrap">
+            <div class="footer-grid">
+                <div>
+                    <h3>Sistemas y Soluciones Integrales</h3>
+                    <p>Nos especializamos en la gama de productos de la familia CONTPAQi®.</p>
+                    <p>Angélica Noemí Guzmán Velázquez, Asesor Certificado CONTPAQi®.</p>
+                </div>
+                <div>
+                    <h3>Productos</h3>
+                    <ul>
+                        <li><a href="contabilidad.html">CONTPAQi® Contabilidad</a></li>
+                        <li><a href="facturaE.html">CONTPAQi® Factura Electrónica</a></li>
+                        <li><a href="nominas.html">CONTPAQi® Nóminas</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Contacto</h3>
+                    <p>Gaza #1304, Col. Beatriz Hernández, C.P. 44760, Guadalajara, Jalisco, México</p>
+                    <p><a href="tel:+523312415435">33 1241 5435</a></p>
+                    <p><a href="mailto:angelica@ssi.mx">angelica@ssi.mx</a><br>
+                       <a href="mailto:angelica.contpaqi@hotmail.com">angelica.contpaqi@hotmail.com</a></p>
+                </div>
+            </div>
+            <p class="footer-bottom">© <span data-year>2026</span> Sistemas y Soluciones Integrales. CONTPAQi® es una marca registrada de su respectivo propietario.</p>
+        </div>
+    </footer>
+</body>
+</html>
